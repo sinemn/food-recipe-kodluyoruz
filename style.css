@@ -1,0 +1,212 @@
+:root {
+  --green: #b8e459;
+}
+
+* {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+h1,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+*::selection {
+  background: var(--green);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem 10%;
+  box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  height: 8rem;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 6rem;
+}
+
+header .navbar ul li a {
+  color: grey;
+}
+
+header .navbar ul li a:hover {
+  color: var(--green);
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem 10%;
+  padding-top: 8.5rem;
+}
+
+.main-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-page .site-info {
+  flex: 1 1 39rem;
+}
+.main-page .site-info h3 {
+  flex: 1 1 39rem;
+}
+.main-page .image {
+  flex: 1 1 39rem;
+}
+
+.main-page .image img {
+  width: 100%;
+}
+.main-page .site-info h3 {
+  color: #333;
+  font-size: 5rem;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+}
+
+.main-page .site-info p {
+  color: #333;
+  font-size: 2.5rem;
+  margin-right: 5em;
+
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-size: 2rem;
+  margin-top: 2em;
+  padding: 1rem 3rem;
+  border-radius: 5em;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0.2em solid var(--green);
+  color: var(--green);
+}
+
+.btn:hover {
+  background: var(--green);
+  color: white;
+}
+
+.recipe-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.recipe-page .image img {
+  width: 950px;
+  height: 850px;
+  margin-right: -2em;
+}
+.recipe-page .image {
+  display: inline-block;
+  text-align: center;
+}
+
+.recipe-page .recipe-text {
+  margin-bottom: 6em;
+  margin-left: 10em;
+}
+
+.recipe-page .recipe-text h3 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: var(--green);
+}
+.recipe-page .recipe-text h1 {
+  font-size: 3.8em;
+  margin-bottom: 1.2em;
+  color: #333;
+  display: inline-block;
+  border-bottom: 3px solid var(--green);
+}
+
+.recipe-page .recipe-text ul {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.recipe-page .recipe-text ul li {
+  margin-left: 1em;
+  font-size: 25px;
+  color: #333;
+  margin-top: 0.4em;
+  list-style-type: square;
+}
+
+.cook-page .cook-text h1 {
+  font-size: 4em;
+  margin-bottom: 1.2em;
+  color: #333;
+  display: inline-block;
+  border-bottom: 3px solid var(--green);
+}
+
+.cook-page .cook-text {
+  align-items: center;
+  justify-content: center;
+}
+
+.cook-page .cook-text ol li {
+  font-size: 15px;
+  margin-top: 1em;
+  font-size: 3em;
+  color: #333;
+}
+
+.cook-page .cook-text ol li span {
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
